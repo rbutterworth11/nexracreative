@@ -1,0 +1,9 @@
+# Netlify config — zero-config import for the static export.
+# In Netlify: "Add new site" → "Import an existing project" → pick this repo.
+# These settings are auto-detected from this file.
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
