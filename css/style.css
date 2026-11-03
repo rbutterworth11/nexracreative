@@ -89,29 +89,25 @@ ul,ol{list-style:none}
   color:var(--faint);
 }
 
-/* Section header: mono label + hairline */
+/* Section header: mono label, heading beneath, hairline */
 .sec-head{
   display:flex;
-  align-items:baseline;
-  gap:clamp(16px,3vw,48px);
-  padding-bottom:22px;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  padding-bottom:clamp(18px,2vw,26px);
   border-bottom:1px solid var(--ink);
-  margin-bottom:clamp(36px,5vw,72px);
+  margin-bottom:clamp(32px,4.5vw,64px);
 }
 .sec-head .eyebrow{white-space:nowrap}
-@media (max-width:760px){
-  .sec-head{flex-direction:column;gap:10px}
-  .sec-head h2{margin-left:0;text-align:left;font-size:16px}
-}
 .sec-head h2{
-  font-family:var(--sans);
-  font-size:clamp(13px,1.1vw,15px);
-  font-weight:500;
-  letter-spacing:-.01em;
+  font-family:var(--display);
+  font-size:clamp(20px,2.1vw,30px);
+  font-weight:600;
+  line-height:1.15;
+  letter-spacing:-.028em;
   color:var(--ink);
-  margin-left:auto;
-  text-align:right;
-  max-width:38ch;
+  max-width:34ch;
 }
 
 /* ---------- Links ---------- */
@@ -469,6 +465,45 @@ body.menu-open .menu-btn i::after{transform:translateY(-6px) rotate(-45deg)}
   font-weight:500;line-height:1.32;letter-spacing:-.025em;
 }
 .prose hr{border:0;height:1px;background:var(--rule);margin:2.4em 0}
+
+/* Card row: related services, areas */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.cards li{background:var(--paper);display:flex}
+.card{display:flex;flex-direction:column;gap:10px;width:100%;padding:clamp(22px,2.4vw,32px);transition:background var(--t-fast)}
+.card h3{font-family:var(--display);font-weight:600;font-size:clamp(18px,1.6vw,22px);letter-spacing:-.025em;line-height:1.15}
+.card p{color:var(--mute);font-size:14.5px;line-height:1.5}
+.card .arw{margin-top:auto;padding-top:8px;font-family:var(--mono);color:var(--faint);transition:transform var(--t-fast),color var(--t-fast)}
+a.card:hover{background:#fafafa}
+a.card:hover .arw{transform:translateX(5px);color:var(--ink)}
+
+/* Left-column asides: label plus an image, fact list or prompt,
+   so a split never leaves a bare label beside a column of text */
+.aside{display:flex;flex-direction:column;gap:clamp(16px,1.8vw,22px);max-width:440px}
+.aside .media{width:100%}
+.facts{border-top:1px solid var(--ink)}
+.facts li{
+  display:grid;grid-template-columns:minmax(96px,.8fr) 1.2fr;gap:16px;
+  padding-block:13px;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.45;
+}
+.facts li span:first-child{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--faint);padding-top:2px;
+}
+.facts li span:last-child{color:var(--ink-soft)}
+.facts a{border-bottom:1px solid var(--faint)}
+.band .facts{border-top-color:var(--paper)}
+.band .facts li{border-bottom-color:var(--rule-dark)}
+.band .facts li span:last-child{color:var(--paper)}
+.ask{border:1px solid var(--rule);padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.ask-title{font-family:var(--display);font-weight:600;font-size:clamp(20px,1.9vw,26px);letter-spacing:-.03em;line-height:1.1}
+.ask .body-muted{font-size:14.5px}
+.ask-mail a{font-size:15px;border-bottom:1px solid var(--ink)}
+.ask .link{margin-top:6px}
+@media (max-width:860px){
+  .aside{max-width:none}
+  /* The FAQ prompt reads better after the questions on a phone */
+  .split>.aside--after{order:2}
+}
 
 /* Sticky sidebar */
 .sticky{position:sticky;top:calc(clamp(64px,7vw,86px) + 32px)}
