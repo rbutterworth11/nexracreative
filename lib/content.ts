@@ -12,7 +12,7 @@ export const site = {
   title: "NEXRA Creative — Content & Marketing for Athletes and Brands",
   description:
     "NEXRA is a content and marketing studio for athletes and brands. Strategy, film and social that builds audiences — and delivers.",
-  email: "info@ekoevents.co.uk",
+  email: "hello@nexracreative.com",
   instagram: "https://instagram.com/nexracreative",
   facebook: "https://facebook.com/nexracreative",
   instagramHandle: "@nexracreative",
