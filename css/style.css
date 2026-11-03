@@ -48,7 +48,7 @@ ul,ol{list-style:none}
 
 /* ---------- Layout ---------- */
 .wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
-.section{padding-block:clamp(60px,11vw,168px)}
+.section{padding-block:clamp(60px,8vw,120px)}
 .section--tight{padding-block:clamp(56px,7vw,104px)}
 .rule{height:1px;background:var(--rule);border:0;width:100%}
 
@@ -361,6 +361,8 @@ body.menu-open .menu-btn i::after{transform:translateY(-6px) rotate(-45deg)}
 .media--43{aspect-ratio:4/3}
 .media--169{aspect-ratio:16/9}
 .media--hero{aspect-ratio:2/1}
+.media--45{aspect-ratio:4/5;max-width:520px}
+@media (max-width:860px){.media--45{aspect-ratio:4/3;max-width:none}.media--45 img{object-position:50% 15%}}
 @media (max-width:760px){.media--hero{aspect-ratio:4/3}}
 /* Images are already monochrome on disk; this only adds a touch of punch. */
 .media img,.case-media img{filter:contrast(1.04)}

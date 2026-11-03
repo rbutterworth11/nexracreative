@@ -13,6 +13,7 @@ the original from the URL below and re-process it.
 |---|---|---|
 | `images/case-collectibles.jpg` | Home, Work — collectibles case | https://www.pexels.com/photo/collection-of-iconic-football-jerseys-on-display-35162974/ |
 | `images/case-clinic.jpg` | Home, Work — healthcare case | https://www.pexels.com/photo/blue-and-white-clinic-bed-7789603/ |
+| `images/studio-camera.jpg` | Home — "What we do" (portrait crop of the camera-rig shot) | https://www.pexels.com/photo/camera-on-stabilizer-photographing-analogue-camera-9992431/ |
 | `images/case-creative.jpg` | Work — creative business case | https://www.pexels.com/photo/camera-on-stabilizer-photographing-analogue-camera-9992431/ |
 | `images/service-content.jpg` | Services — Content | https://www.pexels.com/photo/a-person-writing-on-the-content-planner-7595273/ |
 | `images/service-social.jpg` | Services — Social Media | https://www.pexels.com/photo/close-up-shot-of-a-laptop-beside-paper-documents-7970812/ |
