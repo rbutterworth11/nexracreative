@@ -1,9 +1,165 @@
-# Netlify config — zero-config import for the static export.
-# In Netlify: "Add new site" → "Import an existing project" → pick this repo.
-# These settings are auto-detected from this file.
 [build]
-  command = "npm run build"
-  publish = "out"
+  publish = "."
+  # Static site, no build step. Set here so it overrides the dashboard's
+  # "npm run build", which fails (there is no package.json).
+  command = "echo 'Static site, no build step'"
 
-[build.environment]
-  NODE_VERSION = "20"
+# --- Canonical host: strip www ---
+[[redirects]]
+  from = "https://www.nexracreative.com/*"
+  to = "https://nexracreative.com/:splat"
+  status = 301
+  force = true
+
+# --- Keep internal docs out of the public site ---
+# force = true is required: without it Netlify serves the real file,
+# because a matching static asset wins over a redirect rule.
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/CREDITS.md"
+  to = "/404.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.claude/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# --- Canonical URLs: one address per page ---
+# Netlify resolves /services to services.html as a static file, so these must be
+# forced or the file wins and both URLs return 200 (duplicate content).
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/content-strategy-dorset"
+  to = "/content-strategy-dorset.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/creative-agency-bournemouth"
+  to = "/creative-agency-bournemouth.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/creative-agency-poole"
+  to = "/creative-agency-poole.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal"
+  to = "/journal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/seo-dorset"
+  to = "/seo-dorset.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/social-media-management-dorset"
+  to = "/social-media-management-dorset.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/video-production-dorset"
+  to = "/video-production-dorset.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-design-dorset"
+  to = "/web-design-dorset.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-a-content-retainer-includes"
+  to = "/what-a-content-retainer-includes.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-your-website-isnt-ranking"
+  to = "/why-your-website-isnt-ranking.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work"
+  to = "/work.html"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
