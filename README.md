@@ -11,10 +11,11 @@ Built with Next.js (static export) + Tailwind. Monochrome, editorial, mobile-fir
 Edit that file and push — the site rebuilds automatically.
 
 - **Add a project film:** in `projects`, set `video` to an mp4 URL (and `poster`
-  to a still). For a still-only card, set `image`. Leave both blank to show the
-  "Film coming soon" placeholder.
-- **Clients marquee:** edit the `clients` list.
+  to a still). For a still-only card, set `image`. Projects with neither are
+  listed as text, so there are never empty placeholders.
 - **Contact / socials:** edit `site.email`, `site.instagram`, `site.facebook`.
+- **SEO:** `robots.txt`, `sitemap.xml` and Organization structured data are
+  generated from `site` in the same file.
 
 ## Develop locally
 

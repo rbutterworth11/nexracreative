@@ -34,7 +34,17 @@ export const metadata: Metadata = {
     title: site.title,
     description: site.description,
   },
-  alternates: { canonical: `https://www.${site.domain}` },
+  alternates: { canonical: "/" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.fullName,
+  url: `https://www.${site.domain}`,
+  description: site.description,
+  email: site.email,
+  sameAs: [site.instagram, site.facebook],
 };
 
 export default function RootLayout({
@@ -46,6 +56,10 @@ export default function RootLayout({
       className={`${inter.variable} ${archivo.variable} h-full`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />

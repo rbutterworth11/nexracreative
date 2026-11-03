@@ -19,12 +19,11 @@ export const site = {
 };
 
 export const hero = {
-  eyebrow: "Marketing & Content Production",
   // Keep the headline punchy — it renders very large.
   headline: "Creative that moves audiences.",
-  sub: "A content studio for athletes and brands. Strategy, film and social that builds audiences — and delivers.",
-  primaryCta: { label: "See the work", href: "#work" },
-  secondaryCta: { label: "Start a project", href: "#contact" },
+  sub: "NEXRA is a content and marketing studio for athletes and brands — strategy, film and social, made to grow an audience.",
+  primaryCta: { label: "Start a project", href: "#contact" },
+  secondaryCta: { label: "See the work", href: "#work" },
 };
 
 // ── Projects ────────────────────────────────────────────────────────────
@@ -74,22 +73,11 @@ export const projects: Project[] = [
   },
 ];
 
-// ── Clients ─────────────────────────────────────────────────────────────
-// Shown as a text wall. Swap for logo images later if you want.
-export const clients: string[] = [
-  "FIFA",
-  "UEFA Champions League",
-  "Universal Music Group",
-  "Messi",
-  "U.S. Army",
-];
-
 // ── About ───────────────────────────────────────────────────────────────
 export const about = {
-  heading: "We make work that gets results.",
+  heading: "What we do",
   body: [
-    "NEXRA is a marketing and content-production studio built for athletes and brands that want to be seen — and remembered.",
-    "We handle it end to end: strategy, direction, film and social. Every piece is made to earn attention, grow an audience, and move the numbers that matter.",
+    "We handle it end to end — from the strategy to the final cut. Every piece is made to earn attention, grow an audience and move the numbers that matter.",
   ],
   capabilities: [
     "Strategy",
