@@ -32,7 +32,6 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
 
 <header class="site-head" id="siteHead">
   <div class="wrap head-in">
@@ -42,9 +41,9 @@
     <nav class="nav" id="nav" aria-label="Primary">
       <a href="/services.html">Services</a>
       <a href="/work.html">Work</a>
+      <a href="/about.html" aria-current="page">About</a>
       <a href="/journal.html">Journal</a>
-      <a href="/about.html" aria-current="page">Studio</a>
-      <a class="nav-cta" href="/contact.html">Enquire</a>
+      <a class="nav-cta" href="/contact.html">Contact</a>
     </nav>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i></button>
   </div>
@@ -64,11 +63,6 @@
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Fewer, better things</span><span>Craft is the strategy</span><span>Measured honestly</span><span>A handful of clients</span><span>No long tie-ins</span><span>Made in-house</span>
-    </div>
-  </div>
 
   <section class="section wrap">
     <div class="split">
@@ -83,7 +77,7 @@
 
   <section class="section wrap" style="border-top:1px solid var(--rule)">
     <div class="split">
-      <p class="eyebrow sticky" data-reveal>[ 01 ] &nbsp;Why we exist</p>
+      <p class="eyebrow sticky" data-reveal>Why we exist</p>
       <div class="prose" data-reveal data-delay=".08">
         <p class="display h-md" style="margin-bottom:.5em">There is a gap between the freelancer who disappears and the agency that sends an account manager.</p>
         <p>Big agencies solve the consistency problem by adding people — a strategist, a planner, a junior, an account director, and a monthly invoice that reflects all of them. Freelancers solve the cost problem but rarely the consistency one. Most businesses sit uncomfortably between the two, paying for a lot of process or getting brilliant work at unpredictable intervals.</p>
@@ -99,7 +93,7 @@
 
   <section class="section wrap" id="process" style="border-top:1px solid var(--rule)">
     <div class="sec-head" data-reveal>
-      <p class="eyebrow">[ 02 ] &nbsp;Process</p>
+      <p class="eyebrow">Process</p>
       <h2>Six steps. The same six every time, from first email to monthly report.</h2>
     </div>
     <div class="split">
@@ -120,7 +114,7 @@
   <section class="section band">
     <div class="wrap">
       <div class="sec-head" data-reveal>
-        <p class="eyebrow">[ 03 ] &nbsp;Fit</p>
+        <p class="eyebrow">Fit</p>
         <h2>We'd rather be honest about this up front than three months in.</h2>
       </div>
       <div class="split">
@@ -167,7 +161,7 @@
 
   <section class="section wrap">
     <div class="split">
-      <p class="eyebrow sticky" data-reveal>[ 04 ] &nbsp;Capacity</p>
+      <p class="eyebrow sticky" data-reveal>Capacity</p>
       <div data-reveal data-delay=".08">
         <p class="display h-md">We take on a small number of new projects each quarter.</p>
         <p class="body-muted mt-m" style="max-width:56ch">This isn't a scarcity tactic — it's arithmetic. There's a fixed number of clients one studio can serve properly, and going past it is how quality quietly disappears. If we're full, we'll tell you when we're not, and point you somewhere good in the meantime.</p>
@@ -189,12 +183,12 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <div class="foot-mark display">Nexra Creative</div>
     <div class="foot-grid">
-      <div class="foot-col">
-        <h4>Nexra Creative</h4>
-        <p class="body-muted" style="font-size:14.5px">A creative content studio working with a small roster of brands across Dorset, Hampshire and the wider UK. Content, social, production, web and SEO.</p>
-        <p class="body-muted" style="font-size:13.5px;margin-top:12px">Working in <a href="/creative-agency-bournemouth.html">Bournemouth</a>, <a href="/creative-agency-poole.html">Poole</a>, Christchurch and across Dorset.</p>
+      <div class="foot-col foot-about">
+        <p class="foot-name">Nexra Creative</p>
+        <p class="body-muted">A creative content studio working with a small number of brands across Dorset, Hampshire and the wider UK.</p>
+        <p class="body-muted">Working in <a href="/creative-agency-bournemouth.html">Bournemouth</a>, <a href="/creative-agency-poole.html">Poole</a>, Christchurch and across Dorset.</p>
+        <p><a class="foot-mail" href="mailto:hello&#64;nexracreative.com">hello&#64;nexracreative.com</a></p>
       </div>
       <div class="foot-col">
         <h4>Services</h4>
@@ -213,13 +207,6 @@
           <li><a href="/work.html">Work</a></li>
           <li><a href="/journal.html">Journal</a></li>
           <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello&#64;nexracreative.com">Email</a></li>
-          <li><a href="/contact.html">Start a project</a></li>
         </ul>
         <!-- Social links removed until the profiles exist. When they do, add them
              here AND to the "sameAs" array in the Organization JSON-LD on index.html. -->

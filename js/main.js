@@ -51,14 +51,8 @@
         setTimeout(function () { el.classList.add('in'); }, delay * 1000);
         io.unobserve(el);
       });
-    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    }, { rootMargin: '0px 0px -4% 0px', threshold: 0.01 });
     Array.prototype.forEach.call(targets, function (el) { io.observe(el); });
-  }
-
-  /* --- Marquee: duplicate track for a seamless loop --- */
-  var track = document.querySelector('.marquee-track');
-  if (track && !reduced) {
-    track.innerHTML += track.innerHTML;
   }
 
   /* --- Current year --- */

@@ -70,7 +70,6 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
 
 <header class="site-head" id="siteHead">
   <div class="wrap head-in">
@@ -80,9 +79,9 @@
     <nav class="nav" id="nav" aria-label="Primary">
       <a href="/services.html">Services</a>
       <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
       <a href="/journal.html">Journal</a>
-      <a href="/about.html">Studio</a>
-      <a class="nav-cta" href="/contact.html">Enquire</a>
+      <a class="nav-cta" href="/contact.html">Contact</a>
     </nav>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i></button>
   </div>
@@ -106,17 +105,11 @@
     <div class="media media--hero mt-l" data-reveal><img src="/images/hero-studio.jpg" srcset="/images/hero-studio-1200.jpg 1200w, /images/hero-studio.jpg 2400w" sizes="(max-width:1560px) 100vw, 1432px" alt="A photographer working between two softbox lights in a studio" width="2400" height="1200" fetchpriority="high" decoding="async"></div>
   </section>
 
-  <!-- ============ MARQUEE ============ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Content Strategy</span><span>Social Media Management</span><span>Video Production</span><span>Photography</span><span>Brand Direction</span><span>Web Design</span><span>Technical SEO</span><span>Copywriting</span><span>Editorial Planning</span><span>Analytics</span>
-    </div>
-  </div>
 
   <!-- ============ POSITIONING ============ -->
   <section class="section wrap">
     <div class="split">
-      <p class="eyebrow" data-reveal>[ 01 ] &nbsp;What we do</p>
+      <p class="eyebrow" data-reveal>What we do</p>
       <div data-reveal data-delay=".1">
         <p class="display h-md">Most brands publish a lot and say very little. We do the opposite.</p>
         <div class="prose mt-m" style="max-width:60ch">
@@ -131,7 +124,7 @@
   <!-- ============ SERVICES ============ -->
   <section class="section wrap" id="services">
     <div class="sec-head" data-reveal>
-      <p class="eyebrow">[ 02 ] &nbsp;Services</p>
+      <p class="eyebrow">Services</p>
       <h2>Five disciplines. Taken on together or on their own.</h2>
     </div>
 
@@ -141,7 +134,6 @@
         <h3 class="svc-title">Content</h3>
         <div class="svc-body">
           <p>Strategy, editorial planning and the assets to fill it. We work out what your brand should be saying, then make the things that say it.</p>
-          <ul class="svc-tags"><li>Content strategy</li><li>Editorial calendars</li><li>Copywriting</li><li>Asset libraries</li></ul>
         </div>
         <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#0b0b0b" stroke-width="1.3"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
       </a>
@@ -153,7 +145,6 @@
         <h3 class="svc-title">Social Media</h3>
         <div class="svc-body">
           <p>Full channel management — planned, scheduled, published and reported. You approve; we run it. Or we train your team to run it properly.</p>
-          <ul class="svc-tags"><li>Channel strategy</li><li>Daily management</li><li>Community</li><li>Monthly reporting</li></ul>
         </div>
         <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#0b0b0b" stroke-width="1.3"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
       </a>
@@ -165,7 +156,6 @@
         <h3 class="svc-title">Production</h3>
         <div class="svc-body">
           <p>Video and photography, directed and edited in-house. Campaign films, product stories, social-first cutdowns and libraries you can use for a year.</p>
-          <ul class="svc-tags"><li>Video</li><li>Photography</li><li>Direction</li><li>Post &amp; edit</li></ul>
         </div>
         <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#0b0b0b" stroke-width="1.3"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
       </a>
@@ -177,7 +167,6 @@
         <h3 class="svc-title">Web Design</h3>
         <div class="svc-body">
           <p>Fast, hand-built websites with no page-builder bloat. Designed mobile-first, built to load instantly, and yours to keep.</p>
-          <ul class="svc-tags"><li>Web design</li><li>Build</li><li>Accessibility</li><li>Hosting</li></ul>
         </div>
         <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#0b0b0b" stroke-width="1.3"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
       </a>
@@ -189,7 +178,6 @@
         <h3 class="svc-title">SEO</h3>
         <div class="svc-body">
           <p>Technical and local SEO that gets you found by people already searching for what you do. No guarantees, no jargon, honest monthly reporting.</p>
-          <ul class="svc-tags"><li>Technical SEO</li><li>Local search</li><li>Content</li><li>Reporting</li></ul>
         </div>
         <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="#0b0b0b" stroke-width="1.3"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
       </a>
@@ -198,38 +186,10 @@
     <a class="link mt-m" href="/services.html" style="display:inline-block">All services in detail <span class="arw">&rarr;</span></a>
   </section>
 
-  <!-- ============ PRINCIPLES (dark) ============ -->
-  <section class="section band">
-    <div class="wrap">
-      <div class="sec-head" data-reveal>
-        <p class="eyebrow">[ 03 ] &nbsp;Principles</p>
-        <h2>How we choose to work, and why it produces better work.</h2>
-      </div>
-      <ul class="principles" data-reveal data-delay=".08">
-        <li>
-          <h3>Fewer, better things</h3>
-          <p>One considered piece a week will always outperform five rushed ones. We plan for the year and protect the quality.</p>
-        </li>
-        <li>
-          <h3>Craft is the strategy</h3>
-          <p>People can tell when something was made with care. That difference is the entire competitive advantage, so we spend our time there.</p>
-        </li>
-        <li>
-          <h3>Everything measured, not everything a metric</h3>
-          <p>We report honestly on what moved and what didn't. Vanity numbers get named as vanity numbers.</p>
-        </li>
-        <li>
-          <h3>A handful of clients</h3>
-          <p>We deliberately keep the roster small. It's the only way the work stays good and you get a reply the same day.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <!-- ============ HOW IT WORKS ============ -->
   <section class="section wrap">
     <div class="sec-head" data-reveal>
-      <p class="eyebrow">[ 04 ] &nbsp;How it works</p>
+      <p class="eyebrow">How it works</p>
       <h2>From first email to work going live. No mystery, no drift.</h2>
     </div>
     <ol class="steps" data-reveal data-delay=".06">
@@ -270,8 +230,8 @@
   <!-- ============ SELECTED WORK ============ -->
   <section class="section wrap">
     <div class="sec-head" data-reveal>
-      <p class="eyebrow">[ 05 ] &nbsp;Selected work</p>
-      <h2>A sample of recent engagements. Clients anonymised by preference.</h2>
+      <p class="eyebrow">Selected work</p>
+      <h2>Recent engagements. Clients anonymised by preference.</h2>
     </div>
 
     <div class="work-grid">
@@ -281,11 +241,6 @@
           <p class="eyebrow">Sports memorabilia &amp; collectibles</p>
           <h3 class="display">Turning a deep archive into a daily publishing engine.</h3>
           <p class="body-muted">A globally recognised collectibles brand with extraordinary stock and no consistent way of showing it. We built an editorial system around the archive — a repeatable weekly format, a shooting standard, and a calendar the in-house team could actually keep to.</p>
-          <ul class="case-scope">
-            <li><span>Scope</span><span>Content strategy, production, social</span></li>
-            <li><span>Channels</span><span>Instagram, TikTok, YouTube, email</span></li>
-            <li><span>Duration</span><span>Ongoing</span></li>
-          </ul>
         </div>
       </article>
 
@@ -295,11 +250,6 @@
           <p class="eyebrow">Independent healthcare clinic</p>
           <h3 class="display">A clinic that gets found before it gets recommended.</h3>
           <p class="body-muted">An independent practice relying almost entirely on word of mouth. We rebuilt the site as a fast static build, structured it around the treatments people actually search for, and set up the local SEO foundations properly — schema, service pages, and a Google Business profile that matches.</p>
-          <ul class="case-scope">
-            <li><span>Scope</span><span>Web design, build, technical SEO</span></li>
-            <li><span>Focus</span><span>Local search, treatment pages</span></li>
-            <li><span>Duration</span><span>8 weeks, plus retainer</span></li>
-          </ul>
         </div>
       </article>
     </div>
@@ -310,7 +260,7 @@
   <!-- ============ CTA ============ -->
   <section class="section band">
     <div class="wrap cta">
-      <p class="eyebrow" data-reveal>[ 06 ] &nbsp;Next step</p>
+      <p class="eyebrow" data-reveal>Next step</p>
       <h2 class="display h-lg mt-s" data-reveal data-delay=".08">Tell us what you're<br class="br-md"> trying to build.</h2>
       <p class="body-muted" data-reveal data-delay=".14" style="max-width:52ch">We take on a small number of new projects each quarter. If it's a fit, you'll hear back within a day with honest thoughts — not a proposal deck.</p>
       <div class="mt-m" data-reveal data-delay=".2">
@@ -324,12 +274,12 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <div class="foot-mark display">Nexra Creative</div>
     <div class="foot-grid">
-      <div class="foot-col">
-        <h4>Nexra Creative</h4>
-        <p class="body-muted" style="font-size:14.5px">A creative content studio working with a small roster of brands across Dorset, Hampshire and the wider UK. Content, social, production, web and SEO.</p>
-        <p class="body-muted" style="font-size:13.5px;margin-top:12px">Working in <a href="/creative-agency-bournemouth.html">Bournemouth</a>, <a href="/creative-agency-poole.html">Poole</a>, Christchurch and across Dorset.</p>
+      <div class="foot-col foot-about">
+        <p class="foot-name">Nexra Creative</p>
+        <p class="body-muted">A creative content studio working with a small number of brands across Dorset, Hampshire and the wider UK.</p>
+        <p class="body-muted">Working in <a href="/creative-agency-bournemouth.html">Bournemouth</a>, <a href="/creative-agency-poole.html">Poole</a>, Christchurch and across Dorset.</p>
+        <p><a class="foot-mail" href="mailto:hello&#64;nexracreative.com">hello&#64;nexracreative.com</a></p>
       </div>
       <div class="foot-col">
         <h4>Services</h4>
@@ -348,13 +298,6 @@
           <li><a href="/work.html">Work</a></li>
           <li><a href="/journal.html">Journal</a></li>
           <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello&#64;nexracreative.com">Email</a></li>
-          <li><a href="/contact.html">Start a project</a></li>
         </ul>
         <!-- Social links removed until the profiles exist. When they do, add them
              here AND to the "sameAs" array in the Organization JSON-LD on index.html. -->

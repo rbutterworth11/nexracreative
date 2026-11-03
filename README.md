@@ -111,7 +111,7 @@ The engagement process (Enquiry → Conversation → Proposal → Agreement →
 Production → Publish & report) appears in three places and they must stay in
 sync, or the site contradicts itself:
 
-- `index.html` — the `.steps` grid under "[ 04 ] How it works" (short form)
+- `index.html` — the `.steps` grid under "How it works" (short form)
 - `about.html` — `#process`, the full descriptions (canonical version)
 - `contact.html` — "What happens next", steps 1–4 only
 
@@ -146,7 +146,7 @@ journal.html             Article index
 thanks.html / 404.html   Utility (noindex)
 privacy-policy.html      UK GDPR notice (noindex)
 css/style.css            Everything. Design tokens at the top.
-js/main.js               Header state, mobile menu, scroll reveals, marquee, form state
+js/main.js               Header state, mobile menu, scroll reveals, form state
 robots.txt sitemap.xml llms.txt netlify.toml
 images/                  Greyscale stock photography — see CREDITS.md
 ```
