@@ -60,6 +60,21 @@
     el.textContent = String(new Date().getFullYear());
   });
 
+  /* --- Copy email address --- */
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (b) {
+    if (!navigator.clipboard || !window.isSecureContext) return;
+    b.hidden = false;
+    var status = document.querySelector('[data-copy-status]');
+    var label = b.textContent;
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function () {
+        b.textContent = 'Copied';
+        if (status) status.textContent = 'Email address copied';
+        setTimeout(function () { b.textContent = label; if (status) status.textContent = ''; }, 2000);
+      });
+    });
+  });
+
   /* --- Form: inline validation + submitting state --- */
   var form = document.querySelector('form[data-enhanced]');
   if (form) {
