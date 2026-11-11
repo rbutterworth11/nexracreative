@@ -42,13 +42,14 @@ six-step process must stay in sync — are in [README.md](README.md).
 Ryan's standing instruction: once a website change is done and checked, put it
 live and merge it into `main` without asking again.
 
-1. Commit and push the working branch.
-2. Deploy to production with no build step. Netlify's dashboard build fails on
-   this static site, so upload the committed files directly:
-   `git archive --format=zip -o site.zip HEAD`, then POST it to
-   `https://api.netlify.com/api/v1/sites/c6c11ff3-2825-4878-8520-c39fe9aa8941/deploys`
-   with `Content-Type: application/zip`. In a cloud session the saved Netlify
-   token is added automatically. Confirm the deploy is `ready` and check the
-   change on nexracreative.com.
-3. Open a pull request into `main` and merge it, so `main` always matches the
-   live site.
+1. Commit and push the working branch, and check the change locally.
+2. Open a pull request into `main` and merge it. Netlify deploys `main` to
+   production automatically.
+3. Confirm the production deploy is `ready` and check the change on
+   nexracreative.com.
+
+If the automatic deploy fails, deploy the committed files directly as a
+fallback: `git archive --format=zip -o site.zip HEAD`, then POST it to
+`https://api.netlify.com/api/v1/sites/c6c11ff3-2825-4878-8520-c39fe9aa8941/deploys`
+with `Content-Type: application/zip`. In a cloud session the saved Netlify
+token is added automatically.
