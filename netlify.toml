@@ -152,12 +152,16 @@
 [[headers]]
   for = "/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    # Small files that change with the design: browsers check for a newer
+    # copy on each visit instead of keeping one for a year.
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/js/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    # Small files that change with the design: browsers check for a newer
+    # copy on each visit instead of keeping one for a year.
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/images/*"
