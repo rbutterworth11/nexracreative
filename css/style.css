@@ -712,6 +712,16 @@ html.js .stagger>*{opacity:0;transform:translateY(18px);animation:rise .95s cubi
 @media (max-width:1000px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.skills{grid-template-columns:1fr;gap:26px}}
 
+.ways{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.6vw,36px);
+  margin-top:clamp(26px,3vw,40px);padding-top:clamp(18px,2vw,24px);border-top:1px solid var(--ink);
+}
+.ways p:not(.eyebrow){margin-top:8px;font-size:15px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
+@media (max-width:560px){.ways{grid-template-columns:1fr;gap:16px;margin-top:22px}}
+
+/* Even out heading lines so a single word never sits alone */
+.sec-head h2{text-wrap:balance}
+
 /* ---------- Phone spacing ----------
    Smaller screens get their own, tighter rhythm rather than the bottom of
    the desktop clamps. Tap targets set above are left alone. */
