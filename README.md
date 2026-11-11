@@ -17,10 +17,12 @@ editor's preview command works too.)
 ## Deploy
 
 The site is **live at <https://nexracreative.com>** on Netlify (`www` redirects
-to the apex). The notes below are how it was first set up; to redeploy, run
-`npx netlify-cli deploy --prod --no-build --dir .` from this folder
-(`--no-build` matters: the Netlify dashboard has a Next.js plugin and an
-`npm run build` command switched on, both of which fail on this static site).
+to the apex). Netlify is linked to the GitHub repo: **merging into `main`
+deploys automatically**. Pull requests get a deploy preview. The dashboard has
+no build command, no plugins and publishes the repo root, and `netlify.toml`
+sets the same, so there is nothing to build. To deploy by hand instead, run
+`npx netlify-cli deploy --prod --no-build --dir .` from this folder. The notes
+below are how it was first set up.
 
 Original setup — two commands from this folder:
 
