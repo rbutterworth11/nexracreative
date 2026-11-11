@@ -133,6 +133,17 @@ services.
 - [ ] Add analytics if wanted (Plausible/Fathom keep the privacy policy accurate;
       GA4 would need a cookie banner and a policy update)
 
+
+## The skills list
+
+The "Skills" section (content creation, planning, SEO & web, admin) appears
+twice, with the same markup, and the two copies must match:
+
+- `index.html` — `#skills`, after the services list, linking to the About page
+- `about.html` — `#skills`, before the process (canonical version)
+
+Every item should be something a service page already says the studio does.
+
 ---
 
 ## Structure
